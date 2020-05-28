@@ -6,6 +6,7 @@ const { check, validationResult } = require('express-validator');
 const User = require('../models/User');
 const Contact = require('../models/Contact');
 
+//index of contacts
 // @route     GET api/contacts
 // @desc      Get all users contacts
 // @access    Private
@@ -21,6 +22,7 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
+//add contact
 // @route     POST api/contacts
 // @desc      Add new contact
 // @access    Private
@@ -44,6 +46,7 @@ router.post(
         user: req.user.id,
       });
 
+      //persists to the database
       const contact = await newContact.save();
 
       res.json(contact);
