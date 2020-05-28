@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "npm run server"
+    "server": "npm run server",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"nodemon\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
