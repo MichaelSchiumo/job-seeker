@@ -57,6 +57,7 @@ router.post(
   }
 );
 
+//edit/update contact
 // @route     PUT api/contacts/:id
 // @desc      Update contact
 // @access    Private
@@ -93,6 +94,7 @@ router.put('/:id', auth, async (req, res) => {
   }
 });
 
+//delete a contact record
 // @route     DELETE api/contacts/:id
 // @desc      Delete contact
 // @access    Private
