@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://michael_schiumo:Kazakhstan2017@keepkontacts-h7gnk.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
